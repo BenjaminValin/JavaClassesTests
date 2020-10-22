@@ -4,7 +4,7 @@ import java.sql.SQLOutput;
 
 public class TestBinaire {
     public static void main(String[] args) {
-
+/*
         int a = 45;
         System.out.println(Integer.toBinaryString(a));                              //Convertit un int en binaire dans une String
         System.out.println(Integer.toBinaryString(-a));
@@ -14,8 +14,8 @@ public class TestBinaire {
         int b = 0b101101;                                                           //0b devant un nombre binaire permet de le stocker dans un int
         int c = 0b100111;
         System.out.println(c & b);
-
-        int possibilite = 0b100111010;
+*/
+        int possibilite = 0b111111111;
 
         System.out.println((possibilite & 0b000010000) != 0);
         System.out.println((possibilite & (1<<4)) != 0);                            //décale le 1 en binaire de 4 positions vers la gauche, 000000001 devient 000010000
