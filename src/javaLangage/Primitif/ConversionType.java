@@ -1,4 +1,4 @@
-package LangagePrimitif;
+package javaLangage.Primitif;
 
 public class ConversionType {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package LangagePrimitif;
+package javaLangage.Primitif;
 
 import java.sql.SQLOutput;
 
