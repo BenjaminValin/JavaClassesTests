@@ -20,7 +20,15 @@ public class Position {
         return column;
     }
 
-    @Override
+    public void setLine(int line) {
+        this.line = line;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    @Override                                                                               //Permet de donner un hashcode identique à deux objets similaires
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -32,5 +40,13 @@ public class Position {
     @Override
     public int hashCode() {
         return Objects.hash(line, column);
+    }
+
+    @Override
+    public String toString() {
+        return "Position{" +
+                "line=" + line +
+                ", column=" + column +
+                '}';
     }
 }
