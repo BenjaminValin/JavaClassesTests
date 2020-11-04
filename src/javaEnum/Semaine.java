@@ -5,7 +5,7 @@ public enum Semaine {
     ;
     private int nbHeures;
 
-    private Semaine(int nb){                                            //Les constructeurs d'ENUM sont toujours private
+    private Semaine(int nb){                                            //Les constructeurs d'Enum sont toujours private
         this.nbHeures = nb;
     }
 

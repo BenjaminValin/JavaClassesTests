@@ -2,7 +2,7 @@ package javaCollection.set;
 
 import java.util.Objects;
 
-public class Position {
+public class Position implements Comparable<Position> {
 
     private int line;
     private int column;
@@ -48,5 +48,15 @@ public class Position {
                 "line=" + line +
                 ", column=" + column +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Position o) {                                          //Comparaison entre 2 positions
+        int compare = 0;
+        compare = this.line - o.line;
+        if (compare == 0){
+            compare =  this.column - o.column;
+        }
+        return compare;
     }
 }

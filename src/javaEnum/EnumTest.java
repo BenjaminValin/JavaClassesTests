@@ -6,7 +6,7 @@ public class EnumTest {
 
     public static void main(String[] args) {
         Semaine jour;
-        jour = Semaine.MARDI;
+        jour = Semaine.MARDI;                                                   //Impossible de faire un "new Semaine.MARDI" sur un Enum
         Semaine rendezVous;
         rendezVous = Semaine.JEUDI;
 
@@ -16,13 +16,13 @@ public class EnumTest {
             System.out.println("Pas de rendez-vous aujourd'hui");
         }
 
-        rendezVous = Semaine.valueOf("VENDREDI");
+        rendezVous = Semaine.valueOf("VENDREDI");                               //Permet d'aller d'un string vers l'enum correspondant si on connaît son nom
         Semaine[] values = Semaine.values();                                    // Crée un tableau contenant les données de l'ENUM
         System.out.println(Semaine.values()[1]);                                // Donne l'entrée du tableau à l'indice 1
         System.out.println(values.length);                                      // Donne la longueur du tableau = 7
         System.out.println(Arrays.toString(values));                            // Donne la liste des données du tableau
         int ordinal = jour.ordinal();
-        System.out.println("position de " + jour + " est " + ordinal);          // Mardi est à l'indice 1 dans le tableau
+        System.out.println("position de " + jour + " est " + ordinal);          // Mardi est à l'indice 1 dans la liste d'Enum
         int compare = jour.compareTo(rendezVous);                               // Compare la position de rendezVous(Vendredi) par rapport à la position de jour(mardi), 3 positions d'écart en négatif
         System.out.println(compare);
         System.out.println(rendezVous.getNbHeures());                           // Donne le nombre d'heures du vendredi
